@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Kuma's Portfolio</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            padding-top: 50px;
+            background-color: lightgray;
+        }
+
+        video {
+            width: 100%;
+            max-width: 640px; 
+        }
+
+        .pro-img {
+            border-radius: 50%;
+            width: 50%;
+            max-width: 300px;    
+            height: auto;
+        }
+        .eco-img {
+            text-align: right;
+            width: 100%;
+            max-width: 300px;
+        }
+        .starter-template {
+            padding: 40px 40px;
+            background-color: white;
+        }
+
+        .color-plane {
+            color: lightseagreen;
+        }
+
+        .color-book {
+            color: steelblue;
+        }
+
+        .color-heart {
+            color: plum;
+        }
+
+        .icon-size {
+            font-size: 200%;
+        }
+
+        .jumbotron {
+            background-image: url(./image/20220522_145817.jpg);
+            background-size:  cover; 
+            background-color:rgba(255,255,255,0.8);
+            background-blend-mode:lighten;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Kuma's Page</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Kuma's Page</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1>Kumaのページ</h1>
+                    <p class="lead">はじめまして。<br>よろしくお願いします。 </p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="pro-img"><img src="./image/profile.png" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="starter-template">
+            <div class="row text-center">
+                <h2 id="works">強みは「計画力」と「実行力」<br>何事も最後までコツコツ取り組みます！！</h2>
+                <div class="col-sm-4">
+                    <h3 class="color-plane"> <span class="glyphicon glyphicon-plane icon-size" aria-hidden="true"></span></span><br>旅行</h3>
+                    <p>研究のストレス発散のためによく旅に出ます。<br>某航空会社のステータス修行経験も。</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3 class="color-heart"><i class="fa fa-soccer-ball-o icon-size" style="font-size: 215%"></i><br>スポーツ観戦</h3>
+                    <p>地元の某J2クラブのサポーターになっており、<br>時には現地観戦もしています。</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3 class="color-book"><span class="glyphicon glyphicon-book icon-size" aria-hidden="true"></span><br>資格取得</h3>
+                    <p>情報系だけではなく様々な分野の資格試験に<br>チャレンジしています。</p>
+                </div>
+            </div>
+            <hr>
+
+            <h2 id="works">Works</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>ストッパーキューブリッジの作成</h3>
+                    <p>かつて東京フレンドパークで行われていたアトラクションの<br>ストッパーキューブリッジをVerilog HDLを用いてFPGAに実装しました。<br><br>右は実際のゲームクリア時のプレー画面の様子です。</p>
+                </div>
+                <div class="col-sm-6">
+                    <video controls src="./image/stopper_cubridge.mp4"></video>
+                </div>
+            </div>
+
+            <br><br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>現在の研究内容</h3>
+                    <h4>「深層学習を用いたクロスデバイスに対する<br>サイドチャネル攻撃」に関する研究</h4>
+                    <p>デバイスの暗号化処理実行時のサイドチャネル情報（消費電力や漏洩電磁波など）を収集して秘密情報を推定するサイドチャネル攻撃というサイバー攻撃があります。<br>そのサイドチャネル攻撃の中でもプロファイリングに用いるデバイスと実際の攻撃に用いるデバイスが別であるクロスデバイス攻撃に着目しています。<br>クロスデバイス攻撃では、収集するサイドチャネル情報の分布の差などにより従来の攻撃が適用できない可能性が示されていることから、機械学習のドメイン適応を用いながら課題解決に取り組んでいます。</p>
+                </div>
+                <div class="col-sm-6">
+                    <br><br><br>
+                    <img src="./image/cross_device_attack.jpg" class="img-responsive">
+                </div>
+            </div>
+            <hr>
+            <h2 id="skills">Skills</h2>
+            <h3>Programming Languages</h3>
+            <ul>
+                <li>Python（Pytorchフレームワークを使用した機械学習の経験あり）</li>
+                <li>Verilog HDL</li>
+                <li>C</li>
+            </ul>
+            <h3>Certifications</h3>
+            <h4>Related to Information Technology</h4>
+            <ul>
+                <li>ITパスポート試験 合格（2020年11月）</li>
+                <li>Basic SecCap7 修了（2021年3月）</li>
+                <li>情報セキュリティマネジメント試験 合格（2021年8月）</li>
+                <li>SecCap10 修了見込み（2023年3月）</li>
+                <li>現在，基本情報技術者試験合格を目指す</li>
+            </ul>
+            <div class="row">
+                <div class="col-sm-10">
+                    <h4>Others</h4>
+                        <ul>
+                            <li>環境社会検定試験（eco検定） 合格（2021年9月）</li>
+                            <li>2級ファイナンシャル・プランニング技能士 合格（2022年3月）</li>
+                            <li>情報セキュリティマネジメント試験 合格（2021年8月）</li>
+                            <li>日本FP協会 AFP 登録（2022年6月）</li>
+                            <li>現在，CFP6科目・日商簿記3級合格を目指す</li>
+                        </ul>
+                </div>
+                <div class="col-sm-2">
+                    <br>
+                    <div class="eco-img"> 
+                        <img src="./image/ecopeople-logo.jpg" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            <div class="row starter-template">
+            <a class="btn btn-primary" href="#">Topに戻る</a>
+        </div>
+    </div>
+    <!-- /.container -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
+</html>
